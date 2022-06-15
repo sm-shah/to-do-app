@@ -1,4 +1,12 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!-- <app-to-do-list></app-to-do-list> -->
+<mat-toolbar color="primary">
+  <button  mat-raised-button  (click)="gotoHome()">
+    Home
+</button>
+
+  <button  mat-raised-button color="accent" (click)="addOrEditItem()">
+      Create TO-DO
+  </button>
+  
+</mat-toolbar>
+<router-outlet></router-outlet>
